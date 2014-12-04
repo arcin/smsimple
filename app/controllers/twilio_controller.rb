@@ -5,7 +5,7 @@ class TwilioController < ApplicationController
 
   skip_before_action :verify_authenticity_token
 
-  def voice
+  def sms
     response = Twilio::TwiML::Response.new do |r|
       r.Say 'Hey there.'
     end
