@@ -81,5 +81,3 @@ test:
 production:
   <<: *default
   database: Smsimple_production
-  username: Smsimple
-  password: <%= ENV['SMSIMPLE_DATABASE_PASSWORD'] %>
