@@ -7,7 +7,7 @@ class TwilioController < ApplicationController
 
   def sms
     response = Twilio::TwiML::Response.new do |r|
-      r.Say 'Hey there.'
+      r.Message 'Hey there.'
     end
 
     render_twiml response
